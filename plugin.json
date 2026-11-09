@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.bot-flows",
+  "version": "0.1.0",
+  "description": "Build conversational bots from preconfigured flows for support, lead capture, surveys, and intake, then share or embed them.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-bot-flows",
+  "repository": "https://github.com/amajorai/ryu-bot-flows",
+  "keywords": [
+    "chatbot",
+    "bot builder",
+    "support bot",
+    "lead capture",
+    "conversational form",
+    "nps",
+    "quiz",
+    "intake"
+  ],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/bot-flows",
+      "displayName": "Bot Flows"
+    }
+  }
+}

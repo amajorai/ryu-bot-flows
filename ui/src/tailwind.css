@@ -1,0 +1,48 @@
+/* Bot Flows Companion Tailwind entry. Ryu semantic tokens, base styles, and live-theme defaults come from @ryu/ui/app-ui.css; React Flow's base.css supplies the canvas mechanics. This file owns only the app's @source list and canvas handle styling. */
+@import "tailwindcss";
+@import "@xyflow/react/dist/base.css";
+@import "@ryu/ui/app-ui.css";
+@source "./";
+
+[data-bot-canvas] .react-flow__handle {
+	width: 10px;
+	height: 10px;
+	background: var(--muted-foreground);
+	border: 2px solid var(--background);
+}
+
+[data-bot-canvas] .react-flow__handle-connecting,
+[data-bot-canvas] .react-flow__handle:hover {
+	background: var(--primary);
+}
+
+[data-bot-canvas] .react-flow__edge-path {
+	stroke: var(--muted-foreground);
+	stroke-width: 1.5;
+}
+
+[data-bot-canvas] .react-flow__edge.selected .react-flow__edge-path {
+	stroke: var(--primary);
+	stroke-width: 2;
+}
+
+[data-bot-canvas] .react-flow__controls {
+	overflow: hidden;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: var(--radius-lg);
+}
+
+[data-bot-canvas] .react-flow__controls-button {
+	color: var(--foreground);
+	background: var(--card);
+	border-color: var(--border);
+}
+
+[data-bot-canvas] .react-flow__controls-button svg {
+	fill: currentColor;
+}
+
+[data-bot-canvas] .react-flow__background {
+	color: var(--border);
+}
